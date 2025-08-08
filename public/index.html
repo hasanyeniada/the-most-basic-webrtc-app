@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Training</title>
+
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <h1>WebRTC Demo App</h1>
+    <div id="selectRoom">
+      <label for="roomId">Type Room Name</label>
+      <input type="text" name="roomId" id="roomId" />
+      <button id="goRoom">Join Room</button>
+    </div>
+
+    <div id="consoltingRoom" style="display: none">
+      <video id="localVideo" autoplay></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+  </body>
+</html>
